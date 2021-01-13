@@ -21,13 +21,44 @@ body {
 }
 
 .weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  width: 20%;
+  width: 25%;
   margin: auto;
   margin-top: 4%;
   border: 4px solid cadetblue;
   border-radius: 1em;
   background-color: darkseagreen;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+#cities {
+  font-size: 2em;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+option {
+  background-color: transparent;
+}
+
+.button {
+  font-size: 2em;
+  padding: 1% 6%;
+  border: 4px solid cadetblue;
+  background-color: transparent;
+  border-radius: 0.2em;
+  outline: none;
+}
+
+.button:hover {
+  background-color: cadetblue;
 }
 
 .weather>div{
