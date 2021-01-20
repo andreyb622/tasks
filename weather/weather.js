@@ -10,8 +10,6 @@ async function getWeather() {
   const res = await fetch(url);
   const data = await res.json();
 
-  console.log(data)
-
   weatherIcon.classList.add(`owf-${data.weather[0].id}`);
   temperature.textContent = `${Math.round(data.main.temp)}°C`;
   weatherDescription.textContent = data.weather[0].description;
